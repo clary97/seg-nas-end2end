@@ -2,7 +2,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from operations import ABN
+from .operations import ABN
 
 
 def SeparateConv(C_in, C_out, kernel_size, stride=1, padding=0, dilation=1, bias=False, BatchNorm=ABN):

@@ -5,7 +5,7 @@ from model.batchnorm import SynchronizedBatchNorm2d
 from model.aspp import build_aspp
 from model.decoder import build_decoder
 from model.backbone import build_backbone
-from operations import ABN, NaiveBN
+from .operations import ABN, NaiveBN
 
 
 class DeepLab(nn.Module):

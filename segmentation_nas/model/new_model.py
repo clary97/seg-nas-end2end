@@ -1,12 +1,11 @@
 import torch
 import torch.nn as nn
 import numpy as np
-import cell_level_search
-from genotypes import PRIMITIVES
-from genotypes import Genotype
+from .genotypes import PRIMITIVES
+from .genotypes import Genotype
 import torch.nn.functional as F
 import numpy as np
-from operations import *
+from .operations import *
 from model.decoder import *
 from model.aspp import ASPP_train
 

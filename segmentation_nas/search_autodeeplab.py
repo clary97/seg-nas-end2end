@@ -15,7 +15,7 @@ from utils.mypath import Path
 from utils.search_args import obtain_search_args
 from utils.copy_state_dict import copy_state_dict
 import segmentation_models_pytorch as smp
-import apex
+# import apex
 try:
     from apex import amp
     APEX_AVAILABLE = True

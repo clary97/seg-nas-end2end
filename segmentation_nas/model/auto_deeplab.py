@@ -1,13 +1,13 @@
 import torch.nn as nn
-import cell_level_search
-from genotypes import PRIMITIVES
+from .cell_level_search import *
+from .genotypes import PRIMITIVES
 import torch.nn.functional as F
-from operations import *
-from decoding_formulas import Decoder
+from .operations import *
+from .decoding_formulas import Decoder
 
 
 class AutoDeeplab(nn.Module):
-    def __init__(self, num_classes, num_layers, criterion=None, filter_multiplier=8, block_multiplier=5, step=5, cell=cell_level_search.Cell):
+    def __init__(self, num_classes, num_layers, criterion=None, filter_multiplier=8, block_multiplier=5, step=5, cell=Cell):
         super(AutoDeeplab, self).__init__()
 
         self.cells = nn.ModuleList()

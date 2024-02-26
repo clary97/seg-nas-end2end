@@ -2,7 +2,7 @@ import numpy as np
 import pdb
 import torch
 import torch.nn.functional as F
-from new_model import network_layer_to_space
+from .new_model import network_layer_to_space
 
 class Decoder(object):
     def __init__(self, alphas, betas, steps):
