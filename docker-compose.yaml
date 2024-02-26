@@ -1,0 +1,16 @@
+version: '1'
+
+services:
+  # Project Manager
+  project_manager:
+    build: 
+      context: ./project_manager
+    command: >
+      
+
+
+  # Segmentation NAS
+  segmentation_nas:
+    build: 
+      context: ./segmentation_nas
+    
