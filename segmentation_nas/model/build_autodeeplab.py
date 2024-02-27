@@ -4,7 +4,7 @@ import torch.distributed as dist
 
 from .operations import NaiveBN, ABN
 from .re_aspp import ASPP
-from .decoder import Decoder
+from .re_decoder import Decoder
 from .new_model import get_default_arch, newModel, network_layer_to_space
 
 

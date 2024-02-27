@@ -15,6 +15,4 @@ echo "\n\n********** Decode Architecture **********\n\n"
 CUDA_VISIBLE_DEVICES=0,1,2 python decode_autodeeplab.py --dataset $DATASET --batch_size 16 --resume $MODELPATH
 
 echo "\n\n********** Training Architecture **********\n\n"
-CUDA_VISIBLE_DEVICES=0,1,2 python train.py --batch_size 32 --epochs 300 --warmup-iters 250 --checkname $SAVEPATH --net_arch $NETPATH --cell_arch $CELLPATH --num_layers $LAYER
-
-run/sealer/autodeeplab_layer6/genotype.npy
+CUDA_VISIBLE_DEVICES=0,1,2 python train.py --batch_size 32 --epochs 300 --warmup-iters 250 --checkname $SAVEPATH --net_arch $NETPATH --cell_arch $CELLPATH --num_layers $LAYER --gpu $GPUS

@@ -42,7 +42,7 @@ def main():
 
     if args.backbone == 'autodeeplab':
         model = Retrain_Autodeeplab(args)
-        model_graph = draw_graph(model, graph_name='AutoDeepLab', input_size=(4,3,128,128), expand_nested=True, save_graph=True, filename='search_model', directory=args.checkname)
+        # model_graph = draw_graph(model, graph_name='AutoDeepLab', input_size=(4,3,128,128), expand_nested=True, save_graph=True, filename='search_model', directory=args.checkname)
     else:
         raise ValueError('Unknown backbone: {}'.format(args.backbone))
 
