@@ -9,6 +9,7 @@ run
 # Dataset
 dataset
 *.zip
+*.jpg
 
 # C extensions
 *.so
