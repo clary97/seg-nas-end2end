@@ -3,10 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# test
-data_crop.ipynb
-
-# save
+# folders
+crop
 run
 
 # Dataset
