@@ -1,1 +1,8 @@
 tqdm
+numpy
+#torch==1.13.1 컨테이너로 가져옴
+#torchvision==0.14.1 컨테이너로 가져옴
+torchview
+segmentation-models-pytorch
+six
+graphviz

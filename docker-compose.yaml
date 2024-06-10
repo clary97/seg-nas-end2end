@@ -1,11 +1,10 @@
-version: '1'
 
 services:
   # Project Manager
   project_manager:
     build: 
       context: ./project_manager
-    command: >
+    command: 
       
 
 
@@ -13,4 +12,4 @@ services:
   segmentation_nas:
     build: 
       context: ./segmentation_nas
-    
+    command : python train.py
